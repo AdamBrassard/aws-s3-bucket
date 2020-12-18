@@ -1,0 +1,8 @@
+- s3_lifecycle:
+    name: "{{ s3_name }}"
+    rule_id: "{{ s3_lifecycle_rule_name }}"
+    prefix: "{{ s3_lifecycle_prefix | default(omit, true) }}"
+    noncurrent_version_expiration_days: "{{ s3_version_days }}"
+    expiration_days: "{{ s3_expiration_days }}"
+    status: "{{ s3_lifecycle_status | default('enabled') }}"
+    state: "{{ s3_state | default('present') }}"

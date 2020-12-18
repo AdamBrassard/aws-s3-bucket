@@ -1,0 +1,5 @@
+---
+# tasks file for aws-s3-bucket
+- include_tasks: s3-bucket-create.yml
+- include_tasks: s3-lifecycle.yml
+  when: s3_lifecycle | bool

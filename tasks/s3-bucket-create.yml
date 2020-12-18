@@ -1,0 +1,10 @@
+---
+- name: creating a new s3 bucket
+  s3_bucket:
+    name: "{{ s3_name }}"
+    encryption: "{{ s3_encryption | upper | default('AES256') }}"
+    purge_tags: no
+    state: "{{ s3_state | default('present') }}"
+    tags:
+      provisioner: ansible
+
