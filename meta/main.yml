@@ -1,6 +1,6 @@
 galaxy_info:
   author: Adam Brassard
-  description: Creating Azure Resource Group
+  description: Creating AWS S3 Bucket
   company: Brassard INC
 
   license: MIT
@@ -18,10 +18,7 @@ galaxy_info:
     - s3
     - aws
     - cloud
-    - s3_bucket
-    
 
 dependencies: []
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,
   # if you add dependencies to this list.
-  

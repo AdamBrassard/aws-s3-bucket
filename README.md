@@ -3,6 +3,8 @@ S3 Bucket
 
 Create an S3 bucket in AWS
 
+Currently only creates one bucket
+
 Requirements
 ------------
 

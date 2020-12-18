@@ -7,4 +7,3 @@
     state: "{{ s3_state | default('present') }}"
     tags:
       provisioner: ansible
-
